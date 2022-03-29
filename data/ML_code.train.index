@@ -1,1 +1,1 @@
-gs://gpt-storage/train_data/ML_111782.tfrecords
+gs://gpt-storage-bucket/train_data/ML_111782.tfrecords

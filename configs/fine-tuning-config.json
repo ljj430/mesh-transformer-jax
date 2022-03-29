@@ -21,7 +21,7 @@
 
   "tpu_size": 8,
 
-  "bucket": "gpt-storage",
+  "bucket": "gpt-storage-bucket",
   "model_dir": "finetune_dir",
 
   "train_set": "ML_code.train.index",
