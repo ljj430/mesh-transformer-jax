@@ -1,1 +1,1 @@
-gs://vul_gptj/train_data/vul_dataset_133536.tfrecords
+gs://vul_bucket/train_data/vul_dataset_133536.tfrecords

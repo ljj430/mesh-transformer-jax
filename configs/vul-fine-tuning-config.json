@@ -21,7 +21,7 @@
 
   "tpu_size": 8,
 
-  "bucket": "vul_gptj",
+  "bucket": "vul_bucket",
   "model_dir": "finetune_dir",
 
   "train_set": "vul.train.index",
