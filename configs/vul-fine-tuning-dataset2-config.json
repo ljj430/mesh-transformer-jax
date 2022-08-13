@@ -38,7 +38,7 @@
     "pubmedqa"
   ],
 
-  "val_batches": 12861,
+  "val_batches": 1526,
   "val_every": 100,
   "ckpt_every": 400,
   "keep_every": 400,
