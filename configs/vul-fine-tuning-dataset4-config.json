@@ -12,21 +12,21 @@
   "per_replica_batch": 1,
   "gradient_accumulation_steps": 32,
 
-  "warmup_steps": 800,
-  "anneal_steps": 7200,
+  "warmup_steps": 220,
+  "anneal_steps": 1980,
   "lr": 5e-5,
   "end_lr": 1e-5,
   "weight_decay": 0.1,
-  "total_steps": 8000,
+  "total_steps": 2200,
 
   "tpu_size": 8,
 
   "bucket": "vul_bucket",
-  "model_dir": "finetune_dataset1_dir",
+  "model_dir": "finetune_dataset4_dir",
 
-  "train_set": "vul.train1.index",
+  "train_set": "vul.train4.index",
   "val_set": {
-    "val": "vul.val1.index"
+    "val": "vul.val4.index"
   },
   
   "eval_harness_tasks": [
@@ -38,12 +38,12 @@
     "pubmedqa"
   ],
 
-  "val_batches": 12861,
-  "val_every": 500,
+  "val_batches": 3412,
+  "val_every": 200,
   "ckpt_every": 400,
   "keep_every": 400,
 
-  "name": "vul-fine-tuning-dataset1",
+  "name": "vul-fine-tuning-dataset4",
   "wandb_project": "mesh-transformer-jax",
   "comment": ""
 }
