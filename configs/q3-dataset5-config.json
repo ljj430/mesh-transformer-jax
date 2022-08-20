@@ -1,0 +1,49 @@
+{
+  "layers": 28,
+  "d_model": 4096,
+  "n_heads": 16,
+  "n_vocab": 50400,
+  "norm": "layernorm",
+  "pe": "rotary",
+  "pe_rotary_dims": 64,
+
+  "seq": 2048,
+  "cores_per_replica": 8,
+  "per_replica_batch": 1,
+  "gradient_accumulation_steps": 32,
+
+  "warmup_steps": 128,
+  "anneal_steps": 1152,
+  "lr": 5e-5,
+  "end_lr": 1e-5,
+  "weight_decay": 0.1,
+  "total_steps": 1280,
+
+  "tpu_size": 8,
+
+  "bucket": "vul_bucket",
+  "model_dir": "q3_dataset5_dir",
+
+  "train_set": "vul.q3_train5.index",
+  "val_set": {
+    "val": "vul.q3_val5.index"
+  },
+  
+  "eval_harness_tasks": [
+    "lambada",
+    "piqa",
+    "hellaswag",
+    "winogrande",
+    "mathqa",
+    "pubmedqa"
+  ],
+
+  "val_batches": 1191,
+  "val_every": 160,
+  "ckpt_every": 320,
+  "keep_every": 320,
+
+  "name": "q3-fine-tuning-dataset5",
+  "wandb_project": "RQ3",
+  "comment": ""
+}
